@@ -3,8 +3,8 @@ const docs = google.docs({version: 'v1'});
 const drive = google.drive({version: 'v3'});
 const fs = require('fs');
 const readline = require('readline');
-const config = require('./config');
-
+const dotenv = require('dotenv').config();
+const config = process.env;
 
 (
   async () => {
